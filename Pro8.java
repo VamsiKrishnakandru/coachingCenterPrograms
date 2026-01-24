@@ -1,3 +1,4 @@
+//Interview question
 //Program where 2 numbers are added and multiplied without the use of + and *
 
 import java.util.Scanner;
