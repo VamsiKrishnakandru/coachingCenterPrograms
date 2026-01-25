@@ -46,10 +46,7 @@ class Digits
       }
       k++;
       num=num/10;
-      if(num!=0)
-      {
-        findRepeat(l, num, len-k, z, len);
-      }
+      findRepeat(l, num, len-k, z, len);
     }
     System.out.println("Lowest digit: "+ lowest);
     System.out.println("Higest digit: "+ highest);
@@ -83,7 +80,7 @@ class Digits
   {
     int v=1, u=num;
     int x=power10(l-len+1);
-    int p=z%(num*x);
+    int p = num==0 ? z : z%(num*x);
     while(p>10)
     {
       int y = (p/10) * 10;
@@ -105,10 +102,6 @@ class Digits
       len--;
     }
     System.out.println(a + " - " + v);
-    if(u<10)
-    {
-      System.out.println(u + " - " + v);
-    }
   }
   
   private int power10(int p)
