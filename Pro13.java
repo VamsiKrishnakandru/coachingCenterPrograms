@@ -1,4 +1,9 @@
-//
+//Four Logic problem involving strings - no using string methods
+// 1 - count the number of the duplicate chars in a sentence.
+// 2 - arrange the distinct characters of the sentence in ascending order.
+// 3 - swap 2 words which separated by space.
+// 4 - print the duplicate words in a sentence and print the remaining sentence without the duplicate words
+
 import java.util.Scanner;
 
 class ArrayManipulation
@@ -156,40 +161,53 @@ class ArrayManipulation
       {
         int q = k[i] + 1;
         int z = i == blanklen - 1 ? len-1 : k[i+1] - 1;
-        while(q <= z)
+        int len1 = z + 1 - q;
+        int u = p < k[0] ? 0 : k[m-1] + 1;
+        int en = m <= blanklen-1 ? k[m] : len - 1;
+        int len2 = en - u;
+        int w = 0, x = 0;
+        while(w < len2 && w < len1)
         {
-          int u = p < k[0] ? 0 : k[m-1] + 1;
-          int en = m < blanklen-1 ? k[m] : len;
-          if(ch[p] == ' ' || ch[p] != ch[q])
+           if(ch[u+w] == ch[q+w])
+           {
+             x++;
+           }
+           w++;
+        }
+        if(len1 == len2 && x == len2)
+        {
+          while(q <= z)
           {
-            if(q >= k[blanklen-1] + 1)
+            if(!(ch[p] == ' ' || ch[p] != ch[q]))
             {
-              for(int y = u; y < en; y++)
+              o++;
+              int g = p < k[0] ? k[0] : k[m] - k[m-1] - 1;
+              if(o <= g)
               {
-                if(o > 0)
-                {
-                  ch[y] = ' ';
-                }
+                System.out.print(ch[q]);
+              }
+              if(q >= k[blanklen-1] + 1)
+              {
+                ch[p] = ' ';
+              }
+              ch[q] = ' ';
+            }
+            p++;
+            q++;
+          }
+        }
+        else
+        {
+          if(q >= k[blanklen-1] + 1)
+          {
+            for(int y = u; y < en; y++)
+            {
+              if(o > 0)
+              {
+                ch[y] = ' ';
               }
             }
-            break;
           }
-          else
-          {
-            o++;
-            int g = p < k[0] ? k[0] : k[m] - k[m-1] - 1;
-            if(o <= g)
-            {
-              System.out.print(ch[q]);
-            }
-            if(q >= k[blanklen-1] + 1)
-            {
-              ch[p] = ' ';
-            }
-            ch[q] = ' ';
-          }
-          p++;
-          q++;
         }
         p = p <= k[0] ? 0 : k[m-1] + 1;
         if(o != 0)
