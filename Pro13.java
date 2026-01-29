@@ -158,12 +158,13 @@ class ArrayManipulation
         int z = i == blanklen - 1 ? len-1 : k[i+1] - 1;
         while(q <= z)
         {
-          int u = p < k[0] ? 0 : k[m] + 1;
+          int u = p < k[0] ? 0 : k[m-1] + 1;
+          int en = m < blanklen-1 ? k[m] : len;
           if(ch[p] == ' ' || ch[p] != ch[q])
           {
             if(q >= k[blanklen-1] + 1)
             {
-              for(int y = u; y < k[m]; y++)
+              for(int y = u; y < en; y++)
               {
                 if(o > 0)
                 {
@@ -176,7 +177,7 @@ class ArrayManipulation
           else
           {
             o++;
-            int g = p < k[0] ? k[0] : k[m] - k[m-1];
+            int g = p < k[0] ? k[0] : k[m] - k[m-1] - 1;
             if(o <= g)
             {
               System.out.print(ch[q]);
@@ -201,10 +202,18 @@ class ArrayManipulation
           System.out.println();
     }
     System.out.println();
-    for(int i=0; i<len; i++)
+    for(int i=0; i<len-1; i++)
     {
-        System.out.print(ch[i]);
+        if(ch[i] != ' ' && ch[i+1] == ' ')
+        {
+          System.out.print(ch[i] + " ");
+        }
+        else if(ch[i] != ' ' && ch[i+1] != ' ')
+        {
+          System.out.print(ch[i]);
+        }
     }
+    System.out.print(ch[len-1]);
   }
 }
 
