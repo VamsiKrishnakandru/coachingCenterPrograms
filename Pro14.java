@@ -1,4 +1,11 @@
-//Print all the permutations formed be rearranging the characters of the string.
+//Print all the permutations formed be rearranging the characters of the string of length 4.
+//Enter the String: yes
+//1. eys
+//2. esy
+//3. sey
+//4. sye
+//5. yse
+//6. yes
 
 import java.util.Scanner;
 
@@ -7,47 +14,75 @@ class StringPermutation
   public void printPermutation()
   {
     Scanner scan = new Scanner(System.in);
-    System.out.print("Enter the String: ");
+    System.out.print("Enter the String with length less than 4: ");
     String s = scan.next();
-    int len = s.length(), count=0;
+    int len = s.length(), count=0, l = 0;
     char[] tempch = new char[len];
     tempch = s.toCharArray();
-    
-    for(int k=0; k<len; k++)
-    {
-      for(int i=0; i<len-1; i++)
+    char[] ch = new char[len];
+    ch = s.toCharArray();
+      do
       {
-        for(int j=i+1; j<=len-1; j++)
+        //System.out.println("hi");
+        for(int i=0; i<len-1; i++)
         {
-          if(!(j==k || i==k))
-          {
+            l++;
+            System.out.println();
+            char temp = tempch[i];
+            tempch[i] = tempch[i+1];
+            tempch[i+1] = temp;
             count++;
             System.out.print(count + ". ");
             for(int m=0; m<len; m++)
             {
               System.out.print(tempch[m]); 
             }
-            System.out.println();
-            char temp = tempch[j];
-            tempch[j] = tempch[i];
-            tempch[i] = temp;
-            count++;
-            System.out.print(count + ". ");
-            for(int m=0; m<len; m++)
+            if(l%3 == 0 && len > 3)
             {
-              System.out.print(tempch[m]); 
+              count++;
+              System.out.println();
+              System.out.print(count + ". ");
+              for(int m=len-1; m>=0; m--)
+              {
+                System.out.print(tempch[m]); 
+              }
+              count++;
+              System.out.println();
+              System.out.print(count + ". ");
+              for(int h=0; h<2; h++)
+              {
+                for(int m=len-1-h; m>=0; m=m-2)
+                {
+                  System.out.print(tempch[m]); 
+                }
+              }
+              count++;
+              System.out.println();
+              System.out.print(count + ". ");
+              for(int h=0; h<2; h++)
+              {
+                for(int m=h; m<4; m=m+2)
+                {
+                  System.out.print(tempch[m]); 
+                }
+              }
             }
-            System.out.println();
-          }
         }
+        //System.out.println(compare(ch, tempch, len));
       }
-      char temp = tempch[k];
-      if(k != len-1)
+      while(!compare(ch, tempch, len));
+  }
+  
+  public boolean compare(char[] ch, char[] tempch, int len)
+  {
+    for(int i=0; i<len; i++)
+    {
+      if(ch[i] != tempch[i])
       {
-        tempch[k] = tempch[k+1];
-        tempch[k+1] = temp;
+        return false;
       }
     }
+    return true;
   }
 }
 
