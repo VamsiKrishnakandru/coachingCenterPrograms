@@ -1,10 +1,13 @@
-//interview Question - break a sentence into multiple words without using string methods and write the sentence in reverse order.
-//Enter a sentence: This is a sentence
-//This
-//is
-//a
-//sentence
-//sentence a is This
+/*
+interview Question - break a sentence into multiple words without using string methods and write the sentence in reverse order.
+O/P - 
+Enter a sentence: This is a sentence
+This
+is
+a
+sentence
+sentence a is This
+*/
 
 
 import java.util.Scanner;

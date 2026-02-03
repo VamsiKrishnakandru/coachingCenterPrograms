@@ -1,11 +1,31 @@
-//Print all the permutations formed be rearranging the characters of the string of length 4.
-//Enter the String: yes
-//1. eys
-//2. esy
-//3. sey
-//4. sye
-//5. yse
-//6. yes
+/*Print all the permutations formed be rearranging the characters of the string of length 4.
+Enter the String with length less than 4: this
+
+1. htis
+2. hits
+3. hist
+4. tsih
+5. tish
+6. hsit
+7. ihst
+8. isht
+9. isth
+10. htsi
+11. hsti
+12. itsh
+13. sith
+14. stih
+15. sthi
+16. ihts
+17. iths
+18. shti
+19. tshi
+20. thsi
+21. this
+22. siht
+23. shit
+24. tihs
+*/
 
 import java.util.Scanner;
 

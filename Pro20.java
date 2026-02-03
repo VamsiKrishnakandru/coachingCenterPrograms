@@ -1,21 +1,24 @@
-//problem 417 in leetcode
-//below grid consists of hights is their respective corrdinaties.
-//water flows from higher region to neighbouring region in N,S,E,W directions
-//water finally enters either top or left and bottom or right.
-//Heights in a grid:
-//1 2 2 3 5
-//3 2 3 4 4
-//2 4 5 3 1
-//6 7 1 4 5
-//5 1 1 2 4
-//Corrdinates where water can flow to sea:
-//[0,4]
-//[1,3]
-//[1,4]
-//[2,2]
-//[3,0]
-//[3,1]
-//[4,0]
+/*
+problem 417 in leetcode
+below grid consists of hights is their respective corrdinaties.
+water flows from higher region to neighbouring region in N,S,E,W directions
+water finally enters either top or left and bottom or right.
+O/P - 
+Heights in a grid:
+1 2 2 3 5
+3 2 3 4 4
+2 4 5 3 1
+6 7 1 4 5
+5 1 1 2 4
+Corrdinates where water can flow to sea:
+[0,4]
+[1,3]
+[1,4]
+[2,2]
+[3,0]
+[3,1]
+[4,0]
+*/
 
 class Rainfall
 {

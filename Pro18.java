@@ -1,4 +1,10 @@
-//Find if two strings are a pair of anagrams or not.
+/*
+Find if two strings are a pair of anagrams or not.
+O/P - 
+Enter the first string: archer
+Enter the second string: ahrrce
+It is an Anogram
+*/
 
 import java.util.Scanner;
 

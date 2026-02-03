@@ -1,3 +1,11 @@
+/*Binary Search
+o/p -
+Enter the number to search: 40
+Found at index: 2
+Enter the number to search: 3
+Number is not present in the array
+*/
+
 import java.util.Scanner;
 
 class Pro2 

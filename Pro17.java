@@ -1,4 +1,34 @@
-//Matrix multiplication in 3-d integer array and displaying different combinations of striaght lines possible in 3x3 matrix
+/*
+Matrix multiplication in 3-d integer array and displaying different combinations of striaght lines possible in 3x3 matrix
+O/P - 
+3-d Array:
+1 2 1
+2 2 3
+1 3 2
+
+1 2 1
+2 3 3
+2 1 2
+
+3 2 1
+1 2 1
+2 2 1
+
+matrix mul of 1st and 2nd matrix:
+7 9 9
+12 13 14
+11 13 14
+different combination of straight lines in matrix:
+7 9 9
+12 13 14
+11 13 14
+7 12 11
+9 13 13
+9 14 14
+7 13 14
+9 13 11
+*/
+
 
 import java.util.Scanner;
 

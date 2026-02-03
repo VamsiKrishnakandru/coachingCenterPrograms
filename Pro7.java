@@ -1,5 +1,6 @@
 /*
 program to take values from the user and find lowest, highest, middle and repeat digits in the user entered number
+O/P - 
 Enter a number: 832489234
 4 - 2
 3 - 2

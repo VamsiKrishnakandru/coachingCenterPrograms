@@ -1,8 +1,40 @@
-//Four Logic problem involving strings - no using string methods
-// 1 - count the number of the duplicate chars in a sentence.
-// 2 - arrange the distinct characters of the sentence in ascending order.
-// 3 - swap 2 words which separated by space.
-// 4 - print the duplicate words in a sentence and print the remaining sentence without the duplicate words
+/*
+Question -
+Four Logic problem involving strings - no using string methods
+1 - count the number of the duplicate chars in a sentence.
+2 - arrange the distinct characters of the sentence in ascending order.
+3 - swap 2 words which separated by space.
+4 - print the duplicate words in a sentence and print the remaining sentence without the duplicate words
+O/P - 
+
+Enter the operation: ccount
+Enter the stentence: this is good day to play
+t-2
+i-2
+s-2
+o-3
+d-2
+a-2
+y-2
+
+Enter the operation: aorder
+Enter the stentence: this is good day to play
+a d g h i l o p s t y
+
+Enter the operation: wswap
+Enter the stentence: very nice
+nice very
+
+Enter the operation: rcommon
+Enter the stentence: this is a good place and use this place as it is good
+this
+is
+good
+place
+
+a and use as it
+*/
+
 
 import java.util.Scanner;
 

@@ -1,4 +1,31 @@
-//Groceries, Cleaning, Stationary
+/*
+Question - 
+There are three sections in a supermarket - Groceries, Cleaning, Stationary.
+From each section user can buy any item he wants and if we wants to stop buying he types stop.
+If he wants to leave the sections then he enters stop. 
+The total cost for items he bought is calculated and displayed.
+
+O/P - 
+Enter the location you are visiting
+groceries
+Enter the Item you want to buy
+apple
+Enter the Item you want to buy
+domex
+Enter the Item you want to buy
+stop
+Enter the location you are visiting
+stationary
+Enter the Item you want to buy
+domex
+Enter the Item you want to buy
+apple
+Enter the Item you want to buy
+stop
+Enter the location you are visiting
+stop
+Total amount to be paid: 360
+*/
 
 import java.util.Scanner;
 

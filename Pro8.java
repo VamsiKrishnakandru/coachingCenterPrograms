@@ -1,5 +1,11 @@
-//Interview question
-//Program where 2 numbers are added and multiplied without the use of + and *
+/*
+Program where 2 numbers are added and multiplied without the use of + and *
+O/P -
+Enter the first no.: 3
+Enter the second no.: 4
+Multiplication Answer: 12
+Addition Answer: 7
+*/
 
 import java.util.Scanner;
 

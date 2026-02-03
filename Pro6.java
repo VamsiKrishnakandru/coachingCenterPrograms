@@ -1,7 +1,24 @@
-//program to run three different operations
-//operation 1 - ask for number -> add the digits of the number util only 1 digit remains -> factorial of that digit
-//operation 2 - ask for number -> check if it is palindrom or not
-//operation 3 - ask for string -> check if if is palindrom or not 
+/*
+Questions - 
+program to run three different operations
+operation 1 - ask for number -> add the digits of the number util only 1 digit remains -> factorial of that digit
+operation 2 - ask for number -> check if it is palindrom or not
+operation 3 - ask for string -> check if if is palindrom or not
+O/P - 
+Available operations: fact, npal, spal
+Enter the operation you want to perform: fact
+Enter the number: 4
+Factorial of the digits of the 4 is: 24
+
+Enter the operation you want to perform: npal
+Enter the number: 12321
+Entered number is a palindrom
+
+Enter the operation you want to perform: spal
+Enter the String: nitin
+Entered string is a palindrom
+*/
+ 
 
 import java.util.Scanner;
 
@@ -20,6 +37,7 @@ class Operations
       case "fact":
                   System.out.print("Enter the number: ");
                   factn = scan.nextInt();
+                  int num1 = factn;
                   int u=0;
                   while(factn/10!=0)
                   {
@@ -35,7 +53,7 @@ class Operations
                     System.out.println("number after " + u + " iteration is " + factn);
                   }
                   factn = findFactorial(factn);
-                  System.out.println("Factorial of the digits of the " + factn + " is: " + factn);
+                  System.out.println("Factorial of the digits of the " + num1 + " is: " + factn);
                   break;
       case "npal":
                   System.out.print("Enter the number: ");

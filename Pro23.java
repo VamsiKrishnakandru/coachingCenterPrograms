@@ -1,7 +1,11 @@
-//find group of anagram words in a set of words.
-//anagram
-//nagaram
-//graamna
+/*
+find group of anagram words in a set of words.
+given set of words - {"anagram","nagaram","ramdom","graamna", "turkey"}
+O/P - 
+anagram
+nagaram
+graamna
+*/
 
 class AnagramGroup
 {

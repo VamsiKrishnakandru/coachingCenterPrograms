@@ -1,6 +1,11 @@
-//Q1)
-//===
-//  int a[]={4,7,9};
+/*
+From the given sequence of numbers find the missing numbers.
+O/P - 
+Given array:
+1 2 5 6 7 9
+Missing numbers:
+3 4 8
+*/
 
 class MissingNum
 {

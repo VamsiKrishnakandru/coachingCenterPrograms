@@ -1,5 +1,9 @@
-//display the longest prefix in the given strings
-//raghu
+/*
+display the longest prefix in the given set of strings
+given set - {"nave",  "naveee" , "raghu", "nae", "raghuuu" }
+O/P - 
+raghu
+*/
 
 class StringPrefix
 {

@@ -1,4 +1,34 @@
-//One dimension array problem - add digits in array or arrage them in ascending and descending order
+/*
+One dimension array problem - add digits in array or arrage them in ascending and descending order
+O/P - 
+Enter from following operations: sum, asc, desc: sum
+Enter 5 numbers:
+2
+3
+4
+1
+6
+Sum of the digits: 16
+
+Enter from following operations: sum, asc, desc: asc
+Enter 5 numbers:
+2
+3
+4
+1
+5
+Ascending order of digits:
+12345
+
+Enter 5 numbers:
+2
+3
+4
+1
+5
+Descending order of digits:
+54321
+*/
 
 import java.util.Scanner;
 

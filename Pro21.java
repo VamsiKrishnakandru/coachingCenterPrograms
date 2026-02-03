@@ -1,13 +1,15 @@
-//take input from user and compare to the email set we have and display appropriate message
-//Enter your email address: ravi@gmail.com
-//Welcome to home page
-
+/*
+take input from user and compare to the email set we have and display appropriate message
+O/P - 
+Enter your email address: ravi@gmail.com
+Welcome to home page
+*/
 
 import java.util.Scanner;
 
 class ValidateEmail
 {
-  String[] emailset = {"ravi@gmail.com","nave@gmail.com","madi@gmail.com","gopi@gmail"};
+  String[] emailset = {"ravi@gmail.com","nave@gmail.com","madi@gmail.com","gopi@gmail.com"};
   public void validate()
   {
     System.out.print("Enter your email address: ");

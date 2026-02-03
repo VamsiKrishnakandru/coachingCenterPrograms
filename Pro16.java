@@ -1,5 +1,33 @@
-//Do operations on 3x3 matrices - adding the elements, multiplying the elements
-//From the added matrix find all permutations formed when forming a straight line of three elements across matrix
+/*
+Do operations on 3x3 matrices - adding the elements, multiplying the elements
+From the added matrix find all permutations formed when forming a straight line of three elements across matrix
+O/P -
+Matrix a:
+1 2 2
+3 2 1
+2 3 2
+Matrix b:
+2 3 1
+2 3 2
+3 2 1
+Sum of Matrix a and b:
+3 5 3
+5 5 3
+5 5 3
+Matrix multiplication of a and b:
+12 13 7
+13 17 8
+16 19 10
+different combination of straight lines in matrix:
+3 5 3
+5 5 3
+5 5 3
+3 5 5
+5 5 5
+3 3 3
+3 5 3
+3 5 5
+*/
 
 import java.util.Scanner;
 
