@@ -1,42 +1,89 @@
-//first program
-//Java has 3 modules - JSE-java standard edition, JEE-Java enterprise edition, JME - Java micro edition
-//javac programname.java
-//java classname
-//1st Question - what is the difference between java code and class code? -> java code is java syntax, class code is byte format. 
-//2nd Question - Can we compile the code when the main method is absent? -> Yes, but when executing we get error, JVM cannot find main method.
+//When to use if and Switch blocks: 
+//My understanding -> if block is used when we are dealing with true or false situation. 
+//And switch block is used when a value can take multiple values and we need to make a decision based on what value is present.
+//Interview Practical Answer -> "if" is used for authentication purpose where we need to decide whether to allow the user or not , 
+//"switch" is used for searching and selection operations like web search. 
 
-class pro1
+import java.util.Scanner;
+
+class Pro1
 {
-  int a = 10;
-  int b = 20;
-  String c = "Ram";
-  String d = "Rahul";
-  double e = 300.00;
-  double f = 400.00;
-
-  static void add()
+  String name = "Ram";
+  String url;
+  String enteredName;
+  public void takeInput()
   {
-    System.out.println(a+b);
+    System.out.println("Enter the url for the website: ");
+    Scanner scan = new Scanner(System.in);
+    url = scan.next();
+    System.out.println("Enter the User Name: ");
+    Scanner scan1 = new Scanner(System.in);
+    enteredName = scan1.next();
+    findApp();
   }
 
-  void compare()
+  public void display()
   {
-    System.out.println(e>f);
-  }
-
-  void forLoop()
-  {
-    for(int i = 0; i<10; i++)
+    switch(url)
     {
-      System.out.println(d);
+      case "instagram": 
+              getMessage("Instagram");
+              break;
+      case "gmail":
+              getMessage("Gmail");
+              break;
+      case "fb":
+              getMessage("FB");
+              break;
+      default: System.out.println("App not found");
     }
   }
-  
+
+  public void getMessage(String appName)
+  {
+    String msg="";
+    if(enteredName.equalsIgnoreCase(name))
+    {
+      msg="Welcome to " + appName; 
+    }
+    else
+    {
+      msg="We cannot find you";
+    }
+    System.out.println(msg);
+  }
+
+  public void findApp()
+  {
+    url = url.toLowerCase();
+    if(url.contains("instagram"))
+    {
+      url = "instagram";
+    }
+    else if(url.contains("gmail"))
+    {
+      url = "gmail";
+    }
+    else if(url.contains("fb"))
+    {
+      url = "fb";
+    }
+    else
+    {
+      url="NA";
+    }
+  }
+
   public static void main(String[] args)
   {
-    pro1 p = new pro1(); //It is compulsory to write atleast 1 object for running methods (except when static)
-    p.add();
-    p.compare();
-    p.forLoop();
+    Pro1 p = new Pro1();
+    p.takeInput(); // scanner
+    p.display(); 
   }
 }
+
+
+
+
+ 
+
