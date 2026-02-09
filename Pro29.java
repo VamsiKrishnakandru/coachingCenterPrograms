@@ -1,4 +1,5 @@
 /*
+Leet code - 87 - Scramble string
 Given 2 strings S1 and S2.
 if S1.length()=1 and S1=S2 --> true
 if S1.length()>1: 
