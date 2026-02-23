@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="mekup.css">
+<title>Online Retail Store</title>
+</head>
+<body>
+	<h1>Vamsi's store</h1>
+	<nav class="no-text-select">
+		<div class="home" onclick="window.location.href='ui.html'">Home</div>
+		<div class="dropdown">
+			Electronics
+			<div class="dropdown-content">
+				<div class="items" onclick="window.location.href='pcs.html'">PCs</div>
+				<div class="items" onclick="window.location.href='phones.html'">Phones</div>
+				<div class="items" onclick="window.location.href='appliances.html'">Appliances</div>
+			</div>
+		</div>
+		<div class="dropdown">
+			Groceries
+			<div class="dropdown-content">
+				<div class="items" onclick="window.location.href='vegetables.html'">Vegetables</div>
+				<div class="items" onclick="window.location.href='packed.html'">Packed
+					food</div>
+				<div class="items" onclick="window.location.href='diary.html'">Diary</div>
+			</div>
+		</div>
+		<div class="reg" onclick="window.location.href='registration.html'">Sign
+			In</div>
+	</nav>
+	<div class="subheading">Last visited products!!</div>
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/phone1.jpg"> <img
+				src="images/phone1.jpg" alt="Iphone" width="600" height="400">
+			</a>
+			<div class="desc">
+				<div class="product">IPhone</div>
+				<button class="cart"  onclick="Addtocart()">Add to Cart  </button>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/laptop1.jpg"> <img
+				src="images/laptop1.jpg" alt="Dell Inspiron" width="600"
+				height="400">
+			</a>
+			<div class="desc">
+				<div class="product">Dell</div>
+				<button class="cart">Add to Cart</button>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/machine1.jpg"> <img
+				src="images/machine1.jpg" alt="Dyson" width="600" height="400">
+			</a>
+			<div class="desc">
+				<div class="product">Dyson</div>
+				<button class="cart">Add to Cart</button>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/machine2.jpg"> <img
+				src="images/machine2.jpg" alt="Bosch" width="600" height="400">
+			</a>
+			<div class="desc">
+				<div class="product">Bosch</div>
+				<button class="cart">Add to Cart</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="gallery">
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/veg1.jpg"> <img
+				src="images/veg1.jpg" alt="Carrots" width="600" height="400">
+			</a>
+			<div class="desc">
+				<div class="product">Carrots</div>
+				<button class="cart">Add to Cart</button>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/packed1.jpg"> <img
+				src="images/packed1.jpg" alt="Lays" width="600" height="400">
+			</a>
+			<div class="desc">
+				<div class="product">Lays</div>
+				<button class="cart">Add to Cart</button>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/diary1.jpg"> <img
+				src="images/diary1.jpg" alt="Heritage" width="600" height="400">
+			</a>
+			<div class="desc">
+				<div class="product">Heritage</div>
+				<button class="cart">Add to Cart</button>
+			</div>
+		</div>
+
+		<div class="gallery-item">
+			<a target="_blank" href="images/veg2.jpg"> <img
+				src="images/veg2.jpg" alt="Apples" width="600" height="400">
+			</a>
+			<div class="desc">
+				<div class="product">Apples</div>
+				<button class="cart">Add to Cart</button>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript" src="clientside_action.js"></script>
+</body>
+</html>
