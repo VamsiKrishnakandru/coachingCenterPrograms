@@ -120,6 +120,13 @@ input[type="text"]:hover {
 	color: #fefae0;
 }
 
+input[type="password"]:hover{
+	margin-left: -7px;
+	margin-right: +7px;
+	background-color: #71816d; 
+	color: #fefae0;
+}
+
 input[type="button"]:hover {
 	margin-left: -18px;
 	background-color: #71816d; 
